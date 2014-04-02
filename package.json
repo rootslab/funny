@@ -1,6 +1,6 @@
 {
   "name": "funny",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Funny, a jolly helper for functions.",
   "homepage": "https://github.com/rootslab/funny",
   "private": false,
@@ -27,7 +27,8 @@
     "name": "Guglielmo Ferri",
     "email": "44gatti@gmail.com"
   },
-  "dependencies": {},
+  "dependencies": {
+    },
   "devDependencies": {},
   "main": "index",
   "engines": {
