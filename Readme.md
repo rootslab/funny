@@ -16,7 +16,7 @@ $ npm install funny [-g]
 $ git clone git@github.com:rootslab/funny.git
 ```
 
-> _require_ returns an helper hash/obj with some properties/methods.
+> __require__ returns an helper hash/obj with some properties/methods.
 
 ```javascript
 var Funny  = require( 'funny' );
@@ -57,6 +57,16 @@ Funny#emptyFn() : undefined
  * return input as output
  */
 Funny#echoFn( Object obj ) : Object
+
+/*
+ * a shortcut for Array.prototype.slice
+ */
+Funny#slice( Object arguments ) : Array
+
+/*
+ * a shortcut for toString || Object.prototype.toString
+ */
+Funny#toString( Object obj ) : String
 
 ```
 
