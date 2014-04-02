@@ -68,6 +68,14 @@ Funny#slice( Object arguments ) : Array
  */
 Funny#toString( Object obj ) : String
 
+/* 
+ * recur method is to bypass the tail call recursion problem,
+ * this method use a 'trampolining' method for recursion, code was
+ * based on https://github.com/Gozala/js-tail-call
+ * See examples
+ */
+Funny#recur( Function fn ) : Function
+
 ```
 
 ###Sample Usage
