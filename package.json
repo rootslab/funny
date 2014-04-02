@@ -1,6 +1,6 @@
 {
   "name": "funny",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Funny, a jolly helper for functions.",
   "homepage": "https://github.com/rootslab/funny",
   "private": false,
@@ -16,9 +16,9 @@
     "toString",
     "mock",
     "prepend",
-    "recursion"
-    "recursive"
-    "TCO"
+    "recursion",
+    "recursive",
+    "TCO",
     "arguments",
     "bound",
     "funny",
