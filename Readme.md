@@ -41,14 +41,6 @@ $ npm test
 Funny#bind( Function fn, Array args [, Object scope ] ) : Function
 
 /*
- * returns a new function, bound to fn.
- * For example, to create a shortcut for toString.call:
- * var toString = Funny.mock( toString || Object.prototype.toString );
- * console.log( toString( [ 1, 2, 3 ] ) )
- */
-Funny#mock( Function fn ) : Function
-
-/*
  * an empty function
  */
 Funny#emptyFn() : undefined
@@ -57,6 +49,22 @@ Funny#emptyFn() : undefined
  * return input as output
  */
 Funny#echoFn( Object obj ) : Object
+
+/*
+ * return a new function, bound to fn.
+ * For example, to create a shortcut for toString.call:
+ * var toString = Funny.mock( toString || Object.prototype.toString );
+ * console.log( toString( [ 1, 2, 3 ] ) )
+ */
+Funny#mock( Function fn ) : Function
+
+/* 
+ * recur method is to bypass the tail call recursion problem,
+ * this method use a 'trampolining' method for recursion, code was
+ * based on https://github.com/Gozala/js-tail-call
+ * See examples
+ */
+Funny#recur( Function fn ) : Function
 
 /*
  * a shortcut for Array.prototype.slice
@@ -68,13 +76,43 @@ Funny#slice( Object arguments ) : Array
  */
 Funny#toString( Object obj ) : String
 
-/* 
- * recur method is to bypass the tail call recursion problem,
- * this method use a 'trampolining' method for recursion, code was
- * based on https://github.com/Gozala/js-tail-call
- * See examples
+/*
+ * trigger a function execution before another one.
+ * Note that, regardless of the order of activation/execution,
+ * the 2 funcitons will run in parallel; it means that the
+ * first function could also end its execution after the second one.
  */
-Funny#recur( Function fn ) : Function
+Funny#trigger( Function fn, Function ln [, Object scope ] ) : Function
+
+/*
+ * chaining functions execution.
+ * Every function will be executed in order of appearence and
+ * will receive a callback argument to execute the next function,
+ * optionally with some desired arguments. 
+ * If left was true, the callback is passed as the first
+ * argument to the function, otherwise as the last argument.
+ */
+Funny#chain( Array functions [, Object scope [, Boolean left ] ] ) : Function
+
+/*
+ * pre-execute a fn before another one.
+ * The pre-executed function should call the callback,
+ * passed as an argument, to launch the second function.
+ * If left was true, the callback is passed as the first
+ * argument to the function, otherwise as the last argument.
+ */
+Funny#precede( Function fn, Function ln [, Object scope [, Boolean left ] ] ) : Function
+
+/*
+ * pre-execute a fn before another one ( expressed as an object property ),
+ * replacing the latter with the fused function. It is a shortcut for:
+ * obj[ fname ] = precede( fn, obj[ fname ], env );
+ * The pre-executed function should call the callback, passed as an argument,
+ * to launch the second function.
+ * If left was true, the callback is passed as the first argument to the function,
+ * otherwise as the last argument.
+ */
+Funny#fuse( Function fn, Object obj, String fname [, Object scope [, Boolean left ] ] ) : Function
 
 ```
 
