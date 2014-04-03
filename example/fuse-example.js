@@ -8,7 +8,7 @@ var log = console.log
         log( '- zn scope:', this );
         log( '- zn will sleep for 3 secs..' );
         setTimeout( function () {
-            log( '- zn ends execution, now executing o.fn:')
+            log( '- zn ends execution, now executing o.fn:' );
             fire( err );
         }, 3000 );
     }

@@ -8,7 +8,7 @@ var log = console.log
     , assert = require( 'assert' )
     , util = require( 'util' )
     , Funny = require( '../' )
-    // cusotm scope
+    // custom scope
     , scope = {
         field : 'value' 
     }
