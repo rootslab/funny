@@ -29,6 +29,11 @@ $ cd funny/
 $ npm test
 ```
 
+###Sample Usage
+
+> See [examples](example/).
+
+
 ###Methods
 
 > Arguments within [ ] are optional.
@@ -62,7 +67,6 @@ Funny#mock( Function fn ) : Function
  * recur method is to bypass the tail call recursion problem,
  * this method use a 'trampolining' method for recursion, code was
  * based on https://github.com/Gozala/js-tail-call
- * See examples
  */
 Funny#recur( Function fn ) : Function
 
@@ -115,10 +119,6 @@ Funny#precede( Function fn, Function ln [, Object scope [, Boolean left ] ] ) : 
 Funny#fuse( Function fn, Object obj, String fname [, Object scope [, Boolean left ] ] ) : Function
 
 ```
-
-###Sample Usage
-
-> See [examples](example/).
 
 ------------------------------------------------------------------------
 
