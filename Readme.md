@@ -122,6 +122,7 @@ Funny#fuse( Function fn, Object obj, String fname [, Object scope [, Boolean lef
 
 ------------------------------------------------------------------------
 
+
 ### MIT License
 
 > Copyright (c) 2014 &lt; Guglielmo Ferri : 44gatti@gmail.com &gt;
