@@ -61,6 +61,11 @@ Funny#echoFn( Object obj ) : Object
 Funny#checkFn( Function fn ) : Function
 
 /*
+ * shortcut for Array.isArray( arr ) ? arr : [];
+ */
+Funny#checkArr( Array arr ) : Array
+
+/*
  * return a new function, bound to fn.
  * For example, to create a shortcut for toString.call:
  * var toString = Funny.mock( toString || Object.prototype.toString );
