@@ -56,6 +56,11 @@ Funny#emptyFn() : undefined
 Funny#echoFn( Object obj ) : Object
 
 /*
+ * shortcut for ( typeof fn === 'function' ) ? fn : emptyFn;
+ */
+Funny#checkFn( Function fn ) : Function
+
+/*
  * return a new function, bound to fn.
  * For example, to create a shortcut for toString.call:
  * var toString = Funny.mock( toString || Object.prototype.toString );
