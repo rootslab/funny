@@ -114,6 +114,7 @@ Funny#chain( Array functions [, Object scope [, Boolean left ] ] ) : Function
  * passed as an argument, to launch the second function.
  * If left was true, the callback is passed as the first
  * argument to the function, otherwise as the last argument.
+ * It is a shortcut for Funny#chain( [ fn , ln ], .. )
  */
 Funny#precede( Function fn, Function ln [, Object scope [, Boolean left ] ] ) : Function
 
