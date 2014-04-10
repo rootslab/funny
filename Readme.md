@@ -61,7 +61,7 @@ Funny#echoFn( Object obj ) : Object
 Funny#checkFn( Function fn ) : Function
 
 /*
- * shortcut for Array.isArray( arr ) ? arr : [];
+ * Shortcut for Array.isArray( arr ) ? arr : [];
  */
 Funny#checkArr( Array arr ) : Array
 
@@ -82,7 +82,7 @@ Funny#mock( Function fn ) : Function
 Funny#recur( Function fn ) : Function
 
 /*
- * Shortcut for Array.prototype.slice.
+ * Shortcut for Array.prototype.slice.call
  */
 Funny#slice( Object arguments ) : Array
 
@@ -92,7 +92,7 @@ Funny#slice( Object arguments ) : Array
 Funny#push( Array source [, Array dest ] ) : Number
 
 /*
- * Shortcut for toString || Object.prototype.toString.
+ * Shortcut for toString.call || Object.prototype.toString.call
  */
 Funny#toString( Object obj ) : String
 
