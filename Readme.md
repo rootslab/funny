@@ -87,9 +87,9 @@ Funny#recur( Function fn ) : Function
 Funny#slice( Object arguments ) : Array
 
 /*
- * Shortcut for toString || Object.prototype.toString.
+ * Shortcut for Array.prototype.push.apply
  */
-Funny#toString( Object obj ) : String
+Funny#push( Array source [, Array dest ] ) : Number
 
 /*
  * Shortcut for toString || Object.prototype.toString.
