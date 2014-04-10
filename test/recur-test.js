@@ -52,4 +52,4 @@ log( '- check if the total number of recursive calls is: %d', i );
 assert.ok( rcalls === i, 'erroneous number of recursive calls: ' + rcalls + ', should be: ' + i )
 
 s = ( Date.now() - stime ) / 1000
-log( '- time elapsed: %d secs\n- recur avg exec rate: %d calls/sec\n', ( s ).toFixed( 2 ), ( i / s ).toFixed( 0 ) );
+log( '- time elapsed: %d secs\n- recur avg exec rate: %d calls/sec', ( s ).toFixed( 2 ), ( i / s ).toFixed( 0 ) );
