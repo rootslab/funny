@@ -29,7 +29,7 @@ var log = console.log
     , arr = boundFn( 'carg1', 'carg2', 'carg3' )
     ;
 
-log( '\n- function bound to arguments %j and scope %j', bargs, scope );
+log( '- function bound to arguments %j and scope %j', bargs, scope );
 
 log( '- check if function arguments %j are prepended by %j', cargs, bargs );
 log( '- result is -> %j', arr );

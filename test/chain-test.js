@@ -13,7 +13,7 @@ var log = console.log
     // fns to chain
     , f1 = function ( err, msg, fire ) {
         var args = slice( arguments ) || [];
-        log( '\n- check arguments passed to the 1st function.' );
+        log( '- check arguments passed to the 1st function.' );
         assert.ok( args[ 0 ] === err, '1st argument should be an error, now is: ' + args[ 0 ] );
         assert.ok( args[ 1 ] === msg, '2nd argument should be a string, now is: ' + args[ 1 ] );
         assert.ok( typeof args[ 2 ] === 'function', '3rd argument should be a function, now is: ' + args[ 2 ] );

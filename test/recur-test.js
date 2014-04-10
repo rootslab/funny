@@ -21,7 +21,7 @@ var log = console.log
     , s = 0
     ;
 
-log( '\n- test fn with %d recursive calls.', i );
+log( '- test fn with %d recursive calls.', i );
 
 assert.throws(
     function () {
