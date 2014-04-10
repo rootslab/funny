@@ -89,7 +89,7 @@ Funny#slice( Object arguments ) : Array
 /*
  * Shortcut for Array.prototype.push.apply
  */
-Funny#push( Array source [, Array dest ] ) : Number
+Funny#push( Array dest [, Array source ] ) : Number
 
 /*
  * Shortcut for toString.call || Object.prototype.toString.call
