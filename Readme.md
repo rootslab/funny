@@ -66,6 +66,12 @@ Funny#checkFn( Function fn ) : Function
 Funny#checkArr( Array arr ) : Array
 
 /*
+ * Check if n is a number, otherwise it returns vice.
+ * Shortcut for ( isNaN( n ) || typeof n !== 'number' ) ? n : Number( vice )
+ */
+Funny#checkNum( Number n, Number vice ) : Number
+
+/*
  * Return a new function, bound to fn.
  * For example, to create a shortcut for toString.call:
  *
