@@ -67,7 +67,7 @@ Funny#checkArr( Array arr ) : Array
 
 /*
  * Check if n is a number, otherwise it returns vice.
- * Shortcut for ( isNaN( n ) || typeof n !== 'number' ) ? n : Number( vice )
+ * Shortcut for ( !isNaN || typeof n !== 'number' ) ? n : Number( vice )
  */
 Funny#checkNum( Number n, Number vice ) : Number
 
