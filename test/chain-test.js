@@ -23,7 +23,7 @@ var log = console.log
         // wait 3 secs
         log( '- now 1st function sleeps for 3 secs...' );
         setTimeout( function () {
-            log( '- test if 2nd function is not already executed.' );
+            log( '- test if 2nd function was not already executed.' );
             assert.ok( ++counter === 1, 'damn! 2nd function was already executed!' );
             log( '- ok, executing 2nd function.' );
             args[ 2 ]( args[ 0 ], null, null, null );
@@ -42,7 +42,7 @@ var log = console.log
         // wait 3 secs
         log( '- now 2nd function sleeps for 3 secs...' );
         setTimeout( function () {
-            log( '- test if 3rd function is not already executed.' );
+            log( '- test if 3rd function was not already executed.' );
             assert.ok( ++counter === 2, 'damn! 3rd function was already executed!' );
             log( '- ok, executing 3rd function.' );
             args[ 4 ]();
@@ -53,7 +53,7 @@ var log = console.log
         log( '- check arguments passed to the 3rd function.' );
         assert.ok( args.length === 1, 'arguments length should be 1, now is: ' + args.length );
         assert.ok( typeof args[ 0 ] === 'function', '1st argument should be a function, now is: ' + args[ 2 ] );
-        log( '- test if 3rd function is executed at last.\n' );
+        log( '- test if 3rd function was executed at last.' );
         assert.ok( ++counter === 3, 'damn! something goes wrong, counter should be = 3, now is: ' + counter );
     }
     , env = { 'zZz' : 'Zzz' }

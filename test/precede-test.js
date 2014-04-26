@@ -38,7 +38,7 @@ var log = console.log
             log( '- check arguments passed to the 2nd function.' );
             assert.ok( args[ 0 ] === err, '1st argument should be an error, now is: ' + args[ 0 ] );
             assert.ok( args[ 1 ] === msg, '2nd argument should be a string, now is: ' + args[ 1 ] );
-            log( '- check current scope for 2nd function.\n' );
+            log( '- check current scope for 2nd function.' );
             assert.ok( this === env, 'wrong scope for 2nd function!' );
         }
     }
