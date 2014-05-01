@@ -61,13 +61,13 @@ Funny#echoFn( Object obj ) : Object
 Funny#checkFn( Function fn ) : Function
 
 /*
- * Shortcut for Array.isArray( arr ) ? arr : [];
+ * Shortcut for Array.isArray( arr ) ? arr : ( wrap ? [ arr ] : [] );
  */
-Funny#checkArr( Array arr ) : Array
+Funny#checkArr( Array arr, Boolean wrap ) : Array
 
 /*
  * Check if n is a number, otherwise it returns vice.
- * Shortcut for ( typeof n === 'number' ) && ! isNaN( n ) ) ? n : +vice;
+ * Shortcut for ( ( typeof n === 'number' ) && ! isNaN( n ) ) ? n : +vice;
  */
 Funny#checkNum( Number n, Number vice ) : Number
 
