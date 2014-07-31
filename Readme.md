@@ -1,17 +1,15 @@
 ###Funny
 
 [![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/rootslab/funny#mit-license)
+[![GITTIP](http://img.shields.io/gittip/rootslab.svg)](https://www.gittip.com/rootslab/)
+[![NPM DOWNLOADS](http://img.shields.io/npm/dm/funny.svg)](http://npm-stat.com/charts.html?package=funny)
 
 [![NPM VERSION](http://img.shields.io/npm/v/funny.svg)](https://www.npmjs.org/package/funny)
 [![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/funny.svg)](http://travis-ci.org/rootslab/funny)
 [![BUILD STATUS](http://img.shields.io/david/rootslab/funny.svg)](https://david-dm.org/rootslab/funny)
+[![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/funny.svg)](https://david-dm.org/rootslab/funny#info=devDependencies)
 
 [![NPM GRAPH1](https://nodei.co/npm-dl/funny.png)](https://nodei.co/npm/funny/)
-
-[![GITHUB tag](http://img.shields.io/github/tag/rootslab/funny.svg)](https://github.com/rootslab/funny/tags)
-[![ISSUES](http://img.shields.io/github/issues/rootslab/funny.svg)](https://github.com/rootslab/funny/issues)
-[![GITTIP](http://img.shields.io/gittip/rootslab.svg)](https://www.gittip.com/rootslab/)
-[![NPM DOWNLOADS](http://img.shields.io/npm/dm/funny.svg)](http://npm-stat.com/charts.html?package=funny)
 
 [![NPM GRAPH2](https://nodei.co/npm/funny.png?downloads=true&stars=true)](https://nodei.co/npm/funny/)
 
