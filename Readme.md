@@ -1,13 +1,16 @@
 ###Funny
 
-[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/rootslab/funny#mit-license)
-[![GITTIP](http://img.shields.io/gittip/rootslab.svg)](https://www.gittip.com/rootslab/)
-[![NPM DOWNLOADS](http://img.shields.io/npm/dm/funny.svg)](http://npm-stat.com/charts.html?package=funny)
+[![CODECLIMATE](http://img.shields.io/codeclimate/github/rootslab/funny.svg?style=flat)](https://codeclimate.com/github/rootslab/funny)
+[![CODECLIMATE-TEST-COVERAGE](http://img.shields.io/codeclimate/coverage/github/rootslab/funny.svg?style=flat)](https://codeclimate.com/github/rootslab/funny)
 
-[![NPM VERSION](http://img.shields.io/npm/v/funny.svg)](https://www.npmjs.org/package/funny)
-[![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/funny.svg)](http://travis-ci.org/rootslab/funny)
-[![BUILD STATUS](http://img.shields.io/david/rootslab/funny.svg)](https://david-dm.org/rootslab/funny)
-[![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/funny.svg)](https://david-dm.org/rootslab/funny#info=devDependencies)
+[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/rootslab/funny#mit-license)
+[![GITTIP](http://img.shields.io/gittip/rootslab.svg?style=flat)](https://www.gittip.com/rootslab/)
+[![NPM DOWNLOADS](http://img.shields.io/npm/dm/funny.svg?style=flat)](http://npm-stat.com/charts.html?package=funny)
+
+[![NPM VERSION](http://img.shields.io/npm/v/funny.svg?style=flat)](https://www.npmjs.org/package/funny)
+[![TRAVIS CI BUILD](http://img.shields.io/travis/rootslab/funny.svg?style=flat)](http://travis-ci.org/rootslab/funny)
+[![BUILD STATUS](http://img.shields.io/david/rootslab/funny.svg?style=flat)](https://david-dm.org/rootslab/funny)
+[![DEVDEPENDENCY STATUS](http://img.shields.io/david/dev/rootslab/funny.svg?style=flat)](https://david-dm.org/rootslab/funny#info=devDependencies)
 
 [![NPM GRAPH1](https://nodei.co/npm-dl/funny.png)](https://nodei.co/npm/funny/)
 
